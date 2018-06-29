@@ -11,3 +11,15 @@ It installs docker-EE (currently dockermsftprovider:Docker/17.06.2-ee-14#DockerD
 from Microsoft.
 
 vagrant ssh -t -c '/vagrant/ps.ps1 example/docker-info.ps1'
+
+## Setup
+
+I tested this with provider=libvirt but it should work with
+VirtualBox.
+
+You will need to have these two plugins installed:
+
+```
+vagrant plugin install vagrant-windows-update
+vagrant plugin install vagrant-reload
+```
